@@ -1,0 +1,46 @@
+# Arquivos e diretórios do PhpStorm
+.idea/
+
+# Arquivos de configuração de PHP
+*.log
+*.sql
+*.sqlite
+*.phar
+
+# Arquivos de configuração de cache do PHP
+/.phpunit.result.cache
+
+# Diretórios e arquivos gerados pelo Composer (gerenciador de dependências do PHP)
+/vendor/
+composer.lock
+
+# Arquivos temporários do sistema
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Diretórios específicos de ambientes de desenvolvimento
+/.vscode/
+.idea/
+
+# Diretórios e arquivos do cache do framework (exemplo Laravel)
+/storage/
+/vendor/
+/node_modules/
+
+# Arquivos de banco de dados e dados temporários
+/database/*.sqlite
+/database/*.sql
+
+# Arquivos de logs
+/logs/
+
+# Arquivos de backup
+*.bak
+*.backup
+*.swp
+
+# Diretórios do sistema de OS
+.DS_Store        # macOS
+Thumbs.db        # Windows
