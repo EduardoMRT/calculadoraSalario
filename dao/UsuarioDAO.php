@@ -7,7 +7,7 @@ class UsuarioDAO
     /**
      * @throws \Exception
      */
-    private function createTableUsuario()
+    public function createTableUsuario():?bool
     {
         try{
             $sql = "CREATE TABLE IF NOT EXISTS usuario(
@@ -17,7 +17,11 @@ class UsuarioDAO
                 )";
             $genericDao = new GenericDAO();
             $conn = $genericDao->conectaDB();
-            $conn-exec($sql);
+            if($conn-exec($sql)){
+                return true;
+            }else{
+                return false;
+            }
         }catch (\PDOException $e){
             throw ($e);
         }

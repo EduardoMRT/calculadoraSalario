@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background-color: rgb(23, 82, 230);
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+}
+
+header li{
+    list-style: none;
+}
+
+.link-header{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255); 
+    border-radius: 0.3%;     
+    padding: 1.5%;
+}
+
+.link-header:hover{
+    background-color: white;
+    color:rgb(23, 82, 230);
+    transition: 0.5s;
+}

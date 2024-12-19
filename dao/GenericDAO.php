@@ -11,8 +11,8 @@ class GenericDAO
     public function conectaDB(): ?PDO {
         $servername = "localhost";
         $username = "root";
-        $password = "senhaDoBD";
-        $dbname = "hidroponia";
+        $password = "admin";
+        $dbname = "calculadoraSalario";
 
 
         try {
